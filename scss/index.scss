@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import './variables';
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+  color: $black-color;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.5rem;
+  color: $black-color;
+  display: flex;
+  justify-content: center;
+  background: url('../assets/jpg/background.jpg') no-repeat center 0;
+}
+
+.nav {
+  position: absolute;
+  right: 0;
+  width: 36px;
+  margin: 20px 30px;
+
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 36px;
+    height: 21px;
+    cursor: pointer;
+
+    &__line {
+      display: block;
+      width: 30px;
+      height: 3px;
+      background-color: $black-color;
+
+      &:nth-child(even) {
+        width: 36px;
+      }
+    }
+  }
+}
+
+.wrapper {
+  max-width: 1140px;
+  height: 100vh;
+  width: 100%;
+  border: 1px solid $black-color;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.section {
+  &__title {
+    font-size: 1rem;
+    font-weight: 700;
+    position: relative;
+    padding-left: 0.625rem;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 2.25rem;
+      height: 2.25rem;
+      border-radius: 50%;
+      background-color: $yellow-color;
+      position: absolute;
+      top: -0.5rem;
+      left: -0.125rem;
+      z-index: -1;
+    }
+  }
+}
+
+.about {
+  border: 1px solid red;
+  position: absolute;
+  top: 206px;
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.75rem;
+    padding: 9px 0 25px 0;
+  }
+
+  &__btns {
+    display: flex;
+  }
+}
+
+.link-btn {
+  font-size: 0.875rem;
+  font-weight: 700;
+  background-color: $yellow-color;
+  padding: 0.75rem 1.625rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  &_secondary {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
