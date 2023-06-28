@@ -7,7 +7,7 @@
   <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
   <link rel="stylesheet" href="./style.css">
   <script src="./script.js" async></script>
-  <title>Document</title>
+  <title>Digital Chief Test by EugeneTsalko</title>
 </head>
 
 <body>
@@ -40,12 +40,12 @@
       <h4 class="section__subtitle">Меня зовут Александра Смит</h4>
       <h1 class="about__title">Я web-разработчик <br> из города Москва</h1>
       <div class="about__btns">
-        <a href="#" class="btn">Портфолио</a>
-        <a href="#" class="btn btn_secondary">Про меня</a>
+        <a href="#benefit" class="btn">Портфолио</a>
+        <a href="#contacts" class="btn btn_secondary">Про меня</a>
       </div>
     </section>
 
-    <section class="section benefit">
+    <section class="section benefit" id="benefit">
       <h4 class="section__subtitle">Опыт</h4>
       <h2 class="section__title">Чем я буду полезна</h2>
       <div class="resume">
@@ -123,7 +123,7 @@
 
     </section>
 
-    <section class="section contacts">
+    <section class="section contacts" id="contacts">
       <img class="contacts__image" src="./assets/jpg/photo.jpg" alt="Alexandra Smit photo"></img>
       <div class="contacts__body">
         <h4 class="section__subtitle">Контакты</h4>
@@ -147,11 +147,11 @@
         <form class="contacts__form form">
           <!-- переименовать стили по бэм -->
           <div class="input__wrapper">
-            <input type="text" id="name" class="form__input">
+            <input type="text" id="name" class="form__input" autocomplete="off">
             <label for="name" class="form__label">Ваше имя</label>
           </div>
           <div class="input__wrapper">
-            <input type="email" id="email" class="form__input">
+            <input type="email" id="email" class="form__input" autocomplete="off">
             <label for="email" class="form__label">Ваша почта</label>
           </div>
           <div class="input__wrapper">
