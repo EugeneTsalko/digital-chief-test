@@ -23,8 +23,8 @@
       <h4 class="section__subtitle">Меня зовут Александра Смит</h4>
       <h1 class="about__title">Я web-разработчик <br> из города Москва</h1>
       <div class="about__btns">
-        <a href="#" class="link-btn">Портфолио</a>
-        <a href="#" class="link-btn link-btn_secondary">Про меня</a>
+        <a href="#" class="btn">Портфолио</a>
+        <a href="#" class="btn btn_secondary">Про меня</a>
       </div>
     </section>
 
@@ -111,6 +111,28 @@
       <div class="contacts__body">
         <h4 class="section__subtitle">Контакты</h4>
         <h2 class="section__title">Свяжитесь со мной</h2>
+        <div class="contacts__info">
+          <p class="contacts__text">Любым удобным для вас способом:
+          </p>
+          <div class="contacts__links">
+            <a href="https://www.facebook.com/" target="_blank" class="links-item">
+              <img src="./assets/svg/facebook.svg" alt="Facebook logo" class="links-item__icon">
+            </a>
+            <a href="https://telegram.org/" target="_blank" class="links-item">
+              <img src="./assets/svg/telegram.svg" alt="Telegram logo" class="links-item__icon">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="links-item">
+              <img src="./assets/svg/instagram.svg" alt="Instagram logo" class="links-item__icon">
+            </a>
+          </div>
+          <p class="contacts__text">Или оставьте ваши данные и я сама вам напишу:</p>
+        </div>
+        <form class="contacts__form form">
+          <input type="text" id="name">
+          <input type="email" id="mail">
+          <textarea id="message"></textarea>
+          <button class="btn">Отправить сообщение</button>
+        </form>
       </div>
 
     </section>
