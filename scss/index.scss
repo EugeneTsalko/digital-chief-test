@@ -84,6 +84,12 @@ body {
     width: 36px;
     height: 21px;
     cursor: pointer;
+
+    transition: $transition;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   &__line {
@@ -176,10 +182,21 @@ body {
   padding: 0.75rem 1.625rem;
   max-width: 13.75rem;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover {
+    background-color: $yellow-color-accent;
+  }
 
   &_secondary {
     background-color: transparent;
     box-shadow: none;
+
+    &:hover {
+      background-color: $blue-color;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    }
   }
 }
 
@@ -333,6 +350,11 @@ body {
   &__icon {
     width: 30px;
     height: 30px;
+    transition: $transition;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 

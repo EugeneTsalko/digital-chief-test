@@ -78,6 +78,10 @@ body {
   width: 36px;
   height: 21px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.nav__btn:hover {
+  transform: scale(1.1);
 }
 .nav__line {
   display: block;
@@ -160,10 +164,19 @@ body {
   padding: 0.75rem 1.625rem;
   max-width: 13.75rem;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  background-color: #ffb701;
 }
 .btn_secondary {
   background-color: transparent;
   box-shadow: none;
+}
+.btn_secondary:hover {
+  background-color: #9ad7f8;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .benefit {
@@ -298,6 +311,10 @@ body {
 .links-item__icon {
   width: 30px;
   height: 30px;
+  transition: all 0.3s ease-in-out;
+}
+.links-item__icon:hover {
+  transform: scale(1.1);
 }
 
 .form {
