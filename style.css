@@ -6,6 +6,7 @@
   margin: 0;
   border: 0;
   box-sizing: border-box;
+  font-family: inherit;
 }
 
 a {
@@ -117,10 +118,10 @@ body {
   transform: translate(-50%);
 }
 .section__subtitle {
+  margin-top: 6px;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.5rem;
-  letter-spacing: 0.5px;
   position: relative;
   padding-left: 0.625rem;
 }
@@ -139,7 +140,7 @@ body {
 
 .about {
   height: 800px;
-  padding-top: 206px;
+  padding-top: 200px;
 }
 .about__title {
   font-size: 3rem;
@@ -171,6 +172,9 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.benefit .section__subtitle {
+  margin-bottom: 6px;
+}
 .benefit .section__subtitle::before {
   padding: 0;
   left: 15px;
@@ -182,6 +186,7 @@ body {
 }
 .resume__title {
   font-size: 1.25rem;
+  line-height: 1.5rem;
   font-weight: 700;
 }
 .resume__group {
@@ -243,6 +248,7 @@ body {
 .item-resume__title {
   font-size: 0.875rem;
   font-weight: 700;
+  line-height: 21px;
 }
 .item-resume__subtitle, .item-resume__text {
   font-size: 0.75rem;
@@ -263,6 +269,7 @@ body {
 }
 .contacts .section__title {
   padding-bottom: 0;
+  margin-top: 6px;
 }
 .contacts .section__title::after {
   left: 0;
@@ -300,21 +307,36 @@ body {
   grid-column-gap: 25px;
   grid-row-gap: 30px;
 }
-.form input {
-  border: 1px solid black;
+.form__input {
+  font-size: 12px;
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+  padding: 14px 20px;
+  resize: none;
 }
-.form textarea {
-  border: 1px solid black;
+.form__label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  position: absolute;
+  padding: 0 8px;
+  background-color: #ffffff;
+  top: -11px;
+  left: 12px;
 }
-.form #name {
+
+.input__wrapper {
+  border: 1px solid black;
+  position: relative;
+}
+.input__wrapper:nth-child(1) {
   grid-area: 1/1/2/2;
 }
-.form #mail {
+.input__wrapper:nth-child(2) {
   grid-area: 1/2/2/3;
 }
-.form #message {
+.input__wrapper:nth-child(3) {
   grid-area: 2/1/3/3;
-  resize: none;
 }
 
 /*# sourceMappingURL=style.css.map */

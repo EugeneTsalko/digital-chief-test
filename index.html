@@ -145,9 +145,19 @@
           <p class="contacts__text">Или оставьте ваши данные и я сама вам напишу:</p>
         </div>
         <form class="contacts__form form">
-          <input type="text" id="name">
-          <input type="email" id="mail">
-          <textarea id="message"></textarea>
+          <!-- переименовать стили по бэм -->
+          <div class="input__wrapper">
+            <input type="text" id="name" class="form__input">
+            <label for="name" class="form__label">Ваше имя</label>
+          </div>
+          <div class="input__wrapper">
+            <input type="email" id="email" class="form__input">
+            <label for="email" class="form__label">Ваша почта</label>
+          </div>
+          <div class="input__wrapper">
+            <textarea id="message" class="form__input"></textarea>
+            <label for="message" class="form__label">Ваше сообщение </label>
+          </div>
           <button class="btn">Отправить сообщение</button>
         </form>
       </div>
