@@ -36,6 +36,39 @@ body {
   background: url('../assets/jpg/background.jpg') no-repeat center 0;
 }
 
+.sidebar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: absolute;
+  left: -110px;
+  top: 382px;
+  transform: rotate(-90deg);
+
+  &__text {
+    font-size: 1rem;
+    font-weight: 700;
+    position: relative;
+  }
+
+  &__line {
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: $black-color;
+  }
+
+  &__links {
+    display: flex;
+    gap: 15px;
+
+    .links-item__icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
 .nav {
   position: absolute;
   right: 0;
@@ -98,6 +131,8 @@ body {
   &__subtitle {
     font-size: 1rem;
     font-weight: 700;
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
     position: relative;
     padding-left: 0.625rem;
 
@@ -110,16 +145,13 @@ body {
       background-color: $yellow-color;
       position: absolute;
       top: -0.5rem;
-      left: -0.125rem;
+      left: 0rem;
       z-index: -1;
     }
   }
 }
 
 .about {
-  // border: 1px solid red;
-  // max-height: 800px;
-  // height: 100%;
   height: 800px;
   padding-top: 206px;
 
@@ -127,7 +159,7 @@ body {
     font-size: 3rem;
     font-weight: 700;
     line-height: 3.75rem;
-    padding: 9px 0 25px 0;
+    margin: 9px 0 32px 0;
   }
 
   &__btns {
@@ -289,6 +321,8 @@ body {
 }
 
 .links-item {
+  display: flex;
+  align-items: center;
   cursor: pointer;
 
   &__icon {
