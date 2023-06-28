@@ -50,23 +50,25 @@ body {
     width: 36px;
     height: 21px;
     cursor: pointer;
+  }
 
-    &__line {
-      display: block;
-      width: 30px;
-      height: 3px;
-      background-color: $black-color;
+  &__line {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: $black-color;
 
-      &:nth-child(even) {
-        width: 36px;
-      }
+    &:nth-child(even) {
+      width: 36px;
     }
   }
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
+
   max-width: 1140px;
-  height: 100vh;
   width: 100%;
   border: 1px solid $black-color;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -74,6 +76,12 @@ body {
 
 .section {
   &__title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 3.75rem;
+  }
+
+  &__subtitle {
     font-size: 1rem;
     font-weight: 700;
     position: relative;
@@ -96,8 +104,10 @@ body {
 
 .about {
   border: 1px solid red;
-  position: absolute;
-  top: 206px;
+  // max-height: 800px;
+  // height: 100%;
+  height: 800px;
+  padding-top: 206px;
 
   &__title {
     font-size: 3rem;
@@ -122,4 +132,34 @@ body {
     background-color: transparent;
     box-shadow: none;
   }
+}
+
+.benefit {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume {
+  display: flex;
+  width: 100%;
+
+  &__group {
+    // display: flex;
+    border: 1px solid red;
+    width: 50%;
+  }
+}
+
+.item-resume {
+  &__header {
+    display: flex;
+  }
+}
+
+.contacts {
+  margin-top: 120px;
+  display: flex;
+  gap: 4.25rem;
 }
