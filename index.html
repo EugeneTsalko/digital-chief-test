@@ -10,29 +10,34 @@
   <title>Digital Chief Test by EugeneTsalko</title>
 </head>
 
-<body>
-  <div class="wrapper">
+<body class="body">
+  <main class="wrapper">
+
     <aside class="sidebar">
       <p class="sidebar__text">Социальные сети</p>
       <span class="sidebar__line"></span>
-      <div class="sidebar__links">
-        <a href="https://github.com/" target="_blank" class="links-item">
-          <img src="./assets/svg/github.svg" alt="Github logo" class="links-item__icon">
+
+      <div class="sidebar__links links">
+        <a href="https://github.com/" target="_blank" class="links__item">
+          <img src="./assets/svg/github.svg" alt="Github logo" class="sidebar__icon links__icon">
         </a>
-        <a href="https://www.instagram.com/" target="_blank" class="links-item">
-          <img src="./assets/svg/instagram.svg" alt="Instagram logo" class="links-item__icon">
+        <a href="https://www.instagram.com/" target="_blank" class="links__item">
+          <img src="./assets/svg/instagram.svg" alt="Instagram logo" class="sidebar__icon links__icon">
         </a>
-        <a href="https://www.facebook.com/" target="_blank" class="links-item">
-          <img src="./assets/svg/facebook.svg" alt="Facebook logo" class="links-item__icon">
+        <a href="https://www.facebook.com/" target="_blank" class="links__item">
+          <img src="./assets/svg/facebook.svg" alt="Facebook logo" class="sidebar__icon links__icon">
         </a>
       </div>
     </aside>
+
     <nav class="nav">
       <div class="nav__wrapper">
         <!-- тут список с навигацией -->
       </div>
       <div class="nav__btn" id="burger">
-        <span class="nav__line"></span><span class="nav__line"></span><span class="nav__line"></span>
+        <span class="nav__line"></span>
+        <span class="nav__line"></span>
+        <span class="nav__line"></span>
       </div>
     </nav>
 
@@ -46,7 +51,7 @@
     </section>
 
     <section class="section benefit" id="benefit">
-      <h4 class="section__subtitle">Опыт</h4>
+      <h4 class="section__subtitle benefit__subtitle">Опыт</h4>
       <h2 class="section__title">Чем я буду полезна</h2>
       <div class="resume">
         <div class="resume__group">
@@ -124,46 +129,45 @@
     </section>
 
     <section class="section contacts" id="contacts">
-      <img class="contacts__image" src="./assets/jpg/photo.jpg" alt="Alexandra Smit photo"></img>
+      <img class="contacts__image" src="./assets/jpg/photo.jpg" alt="Alexandra Smit photo">
       <div class="contacts__body">
         <h4 class="section__subtitle">Контакты</h4>
-        <h2 class="section__title">Свяжитесь со мной</h2>
+        <h2 class="section__title contacts__title">Свяжитесь со мной</h2>
         <div class="contacts__info">
           <p class="contacts__text">Любым удобным для вас способом:
           </p>
-          <div class="contacts__links">
-            <a href="https://www.facebook.com/" target="_blank" class="links-item">
-              <img src="./assets/svg/facebook.svg" alt="Facebook logo" class="links-item__icon">
+          <div class="contacts__links links">
+            <a href="https://www.facebook.com/" target="_blank" class="links__item">
+              <img src="./assets/svg/facebook.svg" alt="Facebook logo" class="links__icon">
             </a>
-            <a href="https://telegram.org/" target="_blank" class="links-item">
-              <img src="./assets/svg/telegram.svg" alt="Telegram logo" class="links-item__icon">
+            <a href="https://telegram.org/" target="_blank" class="links__item">
+              <img src="./assets/svg/telegram.svg" alt="Telegram logo" class="links__icon">
             </a>
-            <a href="https://www.instagram.com/" target="_blank" class="links-item">
-              <img src="./assets/svg/instagram.svg" alt="Instagram logo" class="links-item__icon">
+            <a href="https://www.instagram.com/" target="_blank" class="links__item">
+              <img src="./assets/svg/instagram.svg" alt="Instagram logo" class="links__icon">
             </a>
           </div>
           <p class="contacts__text">Или оставьте ваши данные и я сама вам напишу:</p>
         </div>
         <form class="contacts__form form">
-          <!-- переименовать стили по бэм -->
-          <div class="input__wrapper">
-            <input type="text" id="name" class="form__input" autocomplete="off">
-            <label for="name" class="form__label">Ваше имя</label>
+          <div class="text-field form__input">
+            <input type="text" id="name" class="text-field__input" autocomplete="off">
+            <label for="name" class="text-field__label">Ваше имя</label>
           </div>
-          <div class="input__wrapper">
-            <input type="email" id="email" class="form__input" autocomplete="off">
-            <label for="email" class="form__label">Ваша почта</label>
+          <div class="text-field form__input">
+            <input type="email" id="email" class="text-field__input" autocomplete="off">
+            <label for="email" class="text-field__label">Ваша почта</label>
           </div>
-          <div class="input__wrapper">
-            <textarea id="message" class="form__input"></textarea>
-            <label for="message" class="form__label">Ваше сообщение </label>
+          <div class="text-field form__input">
+            <textarea id="message" class="text-field__input"></textarea>
+            <label for="message" class="text-field__label">Ваше сообщение </label>
           </div>
-          <button class="btn">Отправить сообщение</button>
+          <button class="btn" type="submit">Отправить сообщение</button>
         </form>
       </div>
 
     </section>
-  </div>
+  </main>
 </body>
 
 </html>
