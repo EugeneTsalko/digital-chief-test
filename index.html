@@ -11,6 +11,7 @@
 </head>
 
 <body class="body">
+  <div class="overlay" id="overlay"></div>
   <main class="wrapper">
 
     <aside class="sidebar">
@@ -31,17 +32,50 @@
     </aside>
 
     <nav class="nav">
-      <div class="nav__wrapper">
-        <!-- тут список с навигацией -->
+      <div class="nav__wrapper" id="menu">
+        <button class="nav__btn close-btn" id="close"></button>
+
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#about" class="nav__link">ПРО МЕНЯ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#benefit" class="nav__link">МОЙ ОПЫТ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#benefit" class="nav__link">МОИ НАВЫКИ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#benefit" class="nav__link">МОИ РАБОТЫ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts" class="nav__link">ПРАЙС ЛИСТ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts" class="nav__link">КОНТАКТЫ</a>
+          </li>
+        </ul>
+
+        <div class="nav__links links">
+          <a href="https://github.com/" target="_blank" class="links__item">
+            <img src="./assets/svg/github.svg" alt="Github logo" class="sidebar__icon links__icon">
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" class="links__item">
+            <img src="./assets/svg/instagram.svg" alt="Instagram logo" class="sidebar__icon links__icon">
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" class="links__item">
+            <img src="./assets/svg/facebook.svg" alt="Facebook logo" class="sidebar__icon links__icon">
+          </a>
+        </div>
       </div>
-      <div class="nav__btn" id="burger">
+      <button class="nav__btn" id="burger">
         <span class="nav__line"></span>
         <span class="nav__line"></span>
         <span class="nav__line"></span>
-      </div>
+      </button>
     </nav>
 
-    <section class="section about">
+    <section class="section about" id="about">
       <h4 class="section__subtitle">Меня зовут Александра Смит</h4>
       <h1 class="about__title">Я web-разработчик <br> из города Москва</h1>
       <div class="about__btns">

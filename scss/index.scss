@@ -34,6 +34,22 @@ html {
   color: $black-color;
   @include flex(row, center);
   background: url('../assets/jpg/background.jpg') no-repeat center 0;
+  transition: $transition;
+}
+
+.overlay {
+  display: none;
+
+  &_active {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    z-index: 2;
+    background-color: $white-overlay;
+  }
 }
 
 .wrapper {
@@ -99,6 +115,7 @@ html {
     transition: $transition;
     cursor: pointer;
     @include link-hover;
+    background-color: transparent;
   }
 
   &__line {
@@ -109,6 +126,82 @@ html {
     &:nth-child(even) {
       width: toRem(36);
     }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: toRem(140) 0 toRem(50) 0;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    max-width: 345px;
+    width: 100%;
+    height: 800px;
+    background-color: $yellow-color;
+    z-index: 3;
+    transition: left ease-in-out 0.3s;
+
+    &_active {
+      left: 0%;
+    }
+  }
+
+  &__list {
+    @include flex(column, flex-start, normal, toRem(15));
+    padding-left: toRem(75);
+  }
+
+  &__item {
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      top: toRem(10);
+      left: toRem(-30);
+      content: '';
+      @include size(toRem(15));
+      border-radius: 50%;
+      border: $border-main;
+    }
+  }
+
+  &__link {
+    @include font(toRem(24), 700, toRem(36));
+    color: $white-color;
+  }
+
+  &__links {
+    gap: toRem(15);
+    align-self: center;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  margin: toRem(25);
+  top: 0;
+  right: 0;
+  @include size(toRem(30));
+
+  &:before,
+  &:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 31px;
+    width: 2px;
+    background-color: #333;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
   }
 }
 
