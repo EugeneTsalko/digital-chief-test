@@ -1,0 +1,51 @@
+@import './variables';
+
+@mixin link-hover {
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+@mixin btn-primary-hover {
+  &:hover {
+    background-color: $yellow-color-accent;
+  }
+}
+
+@mixin btn-secondary-hover {
+  &:hover {
+    background-color: $blue-color;
+    box-shadow: $btn-shadow;
+  }
+}
+
+@mixin flex($direction: row, $justify: flex-start, $align: normal, $gap: normal normal) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin font($size, $weight: 700, $lineHeight: normal) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $lineHeight;
+}
+
+@function toRem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}
+
+@mixin circle($width) {
+  min-width: $width;
+  height: $width;
+  background-color: $yellow-color;
+  border-radius: 50%;
+}

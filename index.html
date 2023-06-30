@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" async></script>
+  <title>Digital Chief Test by EugeneTsalko</title>
+</head>
+
+<body class="body">
+  <div class="overlay" id="overlay"></div>
+  <main class="wrapper">
+
+    <aside class="sidebar">
+      <p class="sidebar__text">Социальные сети</p>
+      <span class="sidebar__line"></span>
+
+      <div class="sidebar__links links">
+        <a href="https://github.com/" target="_blank" class="links__item">
+          <img src="./assets/svg/github.svg" alt="Github logo" class="sidebar__icon links__icon">
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" class="links__item">
+          <img src="./assets/svg/instagram.svg" alt="Instagram logo" class="sidebar__icon links__icon">
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" class="links__item">
+          <img src="./assets/svg/facebook.svg" alt="Facebook logo" class="sidebar__icon links__icon">
+        </a>
+      </div>
+    </aside>
+
+    <nav class="nav">
+      <div class="nav__wrapper" id="menu">
+        <button class="nav__btn close-btn" id="close"></button>
+
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#about" class="nav__link">ПРО МЕНЯ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#benefit" class="nav__link">МОЙ ОПЫТ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#benefit" class="nav__link">МОИ НАВЫКИ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#benefit" class="nav__link">МОИ РАБОТЫ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts" class="nav__link">ПРАЙС ЛИСТ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts" class="nav__link">КОНТАКТЫ</a>
+          </li>
+        </ul>
+
+        <div class="nav__links links">
+          <a href="https://github.com/" target="_blank" class="links__item">
+            <img src="./assets/svg/github.svg" alt="Github logo" class="nav__icon links__icon">
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" class="links__item">
+            <img src="./assets/svg/instagram.svg" alt="Instagram logo" class="nav__icon links__icon">
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" class="links__item">
+            <img src="./assets/svg/facebook.svg" alt="Facebook logo" class="nav__icon links__icon">
+          </a>
+        </div>
+      </div>
+      <button class="nav__btn" id="burger">
+        <span class="nav__line"></span>
+        <span class="nav__line"></span>
+        <span class="nav__line"></span>
+      </button>
+    </nav>
+
+    <section class="section about" id="about">
+      <h4 class="section__subtitle">Меня зовут Александра Смит</h4>
+      <h1 class="about__title">Я web-разработчик <br> из города Москва</h1>
+      <div class="about__btns">
+        <a href="#benefit" class="btn">Портфолио</a>
+        <a href="#contacts" class="btn btn_secondary">Про меня</a>
+      </div>
+    </section>
+
+    <section class="section benefit" id="benefit">
+      <h4 class="section__subtitle benefit__subtitle">Опыт</h4>
+      <h2 class="section__title">Чем я буду полезна</h2>
+
+      <div class="resume">
+        <div class="resume__group">
+          <h3 class="resume__title">Образование</h3>
+
+          <div class="item-resume">
+            <div class="item-resume__header">
+              <div class="item-resume__logo">
+                <img src="./assets/svg/university.svg" alt="University logo" class="item-resume__icon">
+              </div>
+              <div class="item-resume__info">
+                <h4 class="item-resume__title">МГТУ им Н.Э. Баумана</h4>
+                <p class="item-resume__subtitle">Диплом магистра | Москва (2014-2020)</p>
+              </div>
+            </div>
+            <p class="item-resume__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmo. </p>
+          </div>
+
+          <div class="item-resume">
+            <div class="item-resume__header">
+              <div class="item-resume__logo">
+                <img src="./assets/svg/courses.svg" alt="Courses logo" class="item-resume__icon">
+              </div>
+              <div class="item-resume__info">
+                <h4 class="item-resume__title">Udemy</h4>
+                <p class="item-resume__subtitle">Курсы по Web-разработке </p>
+              </div>
+            </div>
+            <p class="item-resume__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmo. </p>
+          </div>
+        </div>
+
+        <div class="resume__group">
+          <h3 class="resume__title">Опыт работы</h3>
+
+          <div class="item-resume">
+            <div class="item-resume__header">
+              <div class="item-resume__logo">
+                <img src="./assets/svg/developer.svg" alt="Developer logo" class="item-resume__icon">
+              </div>
+              <div class="item-resume__info">
+                <h4 class="item-resume__title">Front-End Developer</h4>
+                <p class="item-resume__subtitle">EPAM | Москва (2018-2019) </p>
+              </div>
+            </div>
+            <p class="item-resume__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmo. </p>
+          </div>
+
+          <div class="item-resume">
+            <div class="item-resume__header">
+              <div class="item-resume__logo">
+                <img src="./assets/svg/designer.svg" alt="Designer logo" class="item-resume__icon">
+              </div>
+              <div class="item-resume__info">
+                <h4 class="item-resume__title">UI/UX Designer</h4>
+                <p class="item-resume__subtitle">Squad Team | Москва (2018)</p>
+              </div>
+            </div>
+            <p class="item-resume__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmo. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contacts" id="contacts">
+      <img class="contacts__image" src="./assets/jpg/photo.jpg" alt="Alexandra Smit photo">
+
+      <div class="contacts__body">
+        <h4 class="section__subtitle">Контакты</h4>
+        <h2 class="section__title contacts__title">Свяжитесь со мной</h2>
+
+        <div class="contacts__info">
+          <p class="contacts__text">Любым удобным для вас способом:
+          </p>
+          <div class="contacts__links links">
+            <a href="https://www.facebook.com/" target="_blank" class="links__item">
+              <img src="./assets/svg/facebook.svg" alt="Facebook logo" class="links__icon">
+            </a>
+            <a href="https://telegram.org/" target="_blank" class="links__item">
+              <img src="./assets/svg/telegram.svg" alt="Telegram logo" class="links__icon">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="links__item">
+              <img src="./assets/svg/instagram.svg" alt="Instagram logo" class="links__icon">
+            </a>
+          </div>
+          <p class="contacts__text">Или оставьте ваши данные и я сама вам напишу:</p>
+        </div>
+
+        <form class="contacts__form form" id="form" novalidate>
+          <div class="text-field form__input">
+            <input type="text" id="name" class="text-field__input" autocomplete="off">
+            <span class="text-field__error" id="nameError"></span>
+            <label for="name" class="text-field__label">Ваше имя</label>
+          </div>
+          <div class="text-field form__input">
+            <input type="email" id="email" class="text-field__input" autocomplete="off">
+            <span class="text-field__error" id="emailError"></span>
+            <label for="email" class="text-field__label">Ваша почта</label>
+          </div>
+          <div class="text-field form__input">
+            <textarea id="message" class="text-field__input"></textarea>
+            <span class="text-field__error" id="messageError"></span>
+            <label for="message" class="text-field__label">Ваше сообщение </label>
+          </div>
+          <button class="btn" type="submit" id="formBtn">Отправить сообщение</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
