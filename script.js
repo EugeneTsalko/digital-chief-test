@@ -50,16 +50,15 @@ const isEmailValid = (email) =>
   );
 
 const validate = (elem) => {
-  const parent = elem.parentElement;
   const error = elem.nextElementSibling;
   error.innerText = '';
-  parent.style.border = borders.green;
+  elem.style.border = borders.green;
 
   let isValid = true;
 
   if (!elem.value.trim()) {
     error.innerText = errors[elem.id];
-    parent.style.border = borders.red;
+    elem.style.border = borders.red;
 
     isValid = false;
   }
@@ -67,7 +66,8 @@ const validate = (elem) => {
   if (!!elem.value.trim() && elem.type === 'email') {
     if (!isEmailValid(elem.value)) {
       error.innerText = errors.emailNotValid;
-      parent.style.border = borders.red;
+      elem.style.border = borders.red;
+
       isValid = false;
     }
   }
@@ -83,7 +83,7 @@ form.addEventListener('submit', (event) => {
   if (isValid) {
     setTimeout(() => {
       inputs.forEach((elem) => {
-        elem.parentElement.style.border = borders.main;
+        elem.style.border = borders.main;
       });
     }, 1500);
 
@@ -97,11 +97,10 @@ form.addEventListener('submit', (event) => {
 
 inputs.forEach((elem) =>
   elem.addEventListener('change', (event) => {
-    const parent = event.target.parentElement;
     const error = event.target.nextElementSibling;
 
     error.innerText = '';
-    parent.style.border = borders.main;
+    elem.style.border = borders.main;
   }),
 );
 

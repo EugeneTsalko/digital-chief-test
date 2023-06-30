@@ -156,9 +156,9 @@ html {
   position: fixed;
   top: 0;
   left: -100%;
-  max-width: 345px;
+  max-width: 21.5625rem;
   width: 100%;
-  height: 800px;
+  height: 50rem;
   background-color: #ffa501;
   z-index: 3;
   transition: left ease-in-out 0.3s;
@@ -202,6 +202,10 @@ html {
   gap: 0.9375rem;
   align-self: center;
 }
+.nav__icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
 
 .close-btn {
   position: absolute;
@@ -213,10 +217,10 @@ html {
 }
 .close-btn:before, .close-btn:after {
   position: absolute;
-  left: 15px;
+  left: 0.9375rem;
   content: " ";
-  height: 31px;
-  width: 2px;
+  height: 1.9375rem;
+  width: 0.125rem;
   background-color: #333;
 }
 .close-btn:before {
@@ -397,7 +401,7 @@ html {
   font-size: 0.75rem;
   font-weight: 500;
   line-height: normal;
-  max-width: 375px;
+  max-width: 23.4375rem;
 }
 .item-resume__text {
   padding-top: 0.75rem;
@@ -438,7 +442,6 @@ html {
 
 .text-field {
   position: relative;
-  border: 1px solid #000000;
   font-size: 0.75rem;
   font-weight: 500;
   line-height: normal;
@@ -455,6 +458,7 @@ html {
 .text-field__input {
   width: 100%;
   height: 100%;
+  border: 1px solid #000000;
   padding: 0.875rem 1.25rem;
   resize: none;
 }
@@ -550,6 +554,13 @@ html {
 @media screen and (width <= 600px) {
   .body {
     background-size: auto 40rem;
+  }
+  .nav__wrapper {
+    max-width: 15.625rem;
+    height: 40rem;
+  }
+  .nav__list {
+    padding-left: 3.4375rem;
   }
   .wrapper {
     padding: 0 0.625rem 3.125rem 0.625rem;

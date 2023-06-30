@@ -145,9 +145,9 @@ html {
     position: fixed;
     top: 0;
     left: -100%;
-    max-width: 345px;
+    max-width: toRem(345);
     width: 100%;
-    height: 800px;
+    height: toRem(800);
     background-color: $yellow-color;
     z-index: 3;
     transition: left ease-in-out 0.3s;
@@ -191,6 +191,10 @@ html {
     gap: toRem(15);
     align-self: center;
   }
+
+  &__icon {
+    @include size(toRem(20));
+  }
 }
 
 .close-btn {
@@ -203,10 +207,10 @@ html {
   &:before,
   &:after {
     position: absolute;
-    left: 15px;
+    left: toRem(15);
     content: ' ';
-    height: 31px;
-    width: 2px;
+    height: toRem(31);
+    width: toRem(2);
     background-color: #333;
   }
 
@@ -370,7 +374,7 @@ html {
   &__subtitle,
   &__text {
     @include font(toRem(12), 500);
-    max-width: 375px;
+    max-width: toRem(375);
   }
 
   &__text {
@@ -418,7 +422,7 @@ html {
 
 .text-field {
   position: relative;
-  border: $border-main;
+  // border: $border-main;
   @include font(toRem(12), 500);
 
   &:nth-child(1) {
@@ -433,6 +437,8 @@ html {
 
   &__input {
     @include size(100%);
+    border: $border-main;
+
     padding: toRem(14) toRem(20);
     resize: none;
   }
@@ -546,6 +552,17 @@ html {
 @media screen and (width <= 600px) {
   .body {
     background-size: auto toRem(640);
+  }
+
+  .nav {
+    &__wrapper {
+      max-width: toRem(250);
+      height: toRem(640);
+    }
+
+    &__list {
+      padding-left: toRem(55);
+    }
   }
 
   .wrapper {
