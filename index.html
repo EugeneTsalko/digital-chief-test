@@ -183,20 +183,23 @@
           </div>
           <p class="contacts__text">Или оставьте ваши данные и я сама вам напишу:</p>
         </div>
-        <form class="contacts__form form">
+        <form class="contacts__form form" id="form" novalidate>
           <div class="text-field form__input">
             <input type="text" id="name" class="text-field__input" autocomplete="off">
+            <span class="text-field__error" id="nameError"></span>
             <label for="name" class="text-field__label">Ваше имя</label>
           </div>
           <div class="text-field form__input">
             <input type="email" id="email" class="text-field__input" autocomplete="off">
-            <label for="email" class="text-field__label">Ваша почта</label>
+            <span class="text-field__error" id="emailError"></span>
+            <label for="text" class="text-field__label">Ваша почта</label>
           </div>
           <div class="text-field form__input">
             <textarea id="message" class="text-field__input"></textarea>
+            <span class="text-field__error" id="messageError"></span>
             <label for="message" class="text-field__label">Ваше сообщение </label>
           </div>
-          <button class="btn" type="submit">Отправить сообщение</button>
+          <button class="btn" type="submit" id="formBtn">Отправить сообщение</button>
         </form>
       </div>
 

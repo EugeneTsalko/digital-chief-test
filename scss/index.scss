@@ -444,6 +444,13 @@ html {
     top: toRem(-11);
     left: toRem(12);
   }
+
+  &__error {
+    display: block;
+    color: red;
+    height: toRem(17);
+    padding-left: toRem(22);
+  }
 }
 
 .form {
