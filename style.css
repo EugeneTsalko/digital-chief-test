@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 *,
 *::before,
 *::after {
@@ -29,14 +29,14 @@ html {
 }
 
 .body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #000000;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: normal;
   gap: normal normal;
-  background: url("../assets/jpg/background.jpg") no-repeat center 0;
+  background: url('./assets/jpg/background.jpg') no-repeat center 0;
   transition: all 0.3s ease-in-out;
 }
 .body:has(.nav__wrapper_active) {
@@ -182,7 +182,7 @@ html {
   position: absolute;
   top: 0.625rem;
   left: -1.875rem;
-  content: "";
+  content: '';
   width: 0.9375rem;
   height: 0.9375rem;
   border-radius: 50%;
@@ -215,10 +215,11 @@ html {
   width: 1.875rem;
   height: 1.875rem;
 }
-.close-btn:before, .close-btn:after {
+.close-btn:before,
+.close-btn:after {
   position: absolute;
   left: 0.9375rem;
-  content: " ";
+  content: ' ';
   height: 1.9375rem;
   width: 0.125rem;
   background-color: #333;
@@ -244,7 +245,7 @@ html {
   position: absolute;
   bottom: 0;
   left: 50%;
-  content: "";
+  content: '';
   display: inline-block;
   width: 3.75rem;
   height: 0.1875rem;
@@ -262,7 +263,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  content: "";
+  content: '';
   display: inline-block;
   min-width: 2.25rem;
   height: 2.25rem;
@@ -349,7 +350,7 @@ html {
 }
 .resume__group::before {
   position: absolute;
-  content: "";
+  content: '';
   display: inline-block;
   min-width: 0.9375rem;
   height: 0.9375rem;
@@ -383,7 +384,7 @@ html {
 }
 .item-resume__header::before {
   position: absolute;
-  content: "";
+  content: '';
   display: inline-block;
   width: 2.625rem;
   height: 0.0625rem;
@@ -397,7 +398,8 @@ html {
   font-weight: 700;
   line-height: 1.3125rem;
 }
-.item-resume__subtitle, .item-resume__text {
+.item-resume__subtitle,
+.item-resume__text {
   font-size: 0.75rem;
   font-weight: 500;
   line-height: normal;
@@ -622,7 +624,7 @@ html {
 }
 @media screen and (width <= 320px) {
   .body {
-    background: url("../assets/jpg/background-320px.jpg") no-repeat center 0;
+    background: url('./assets/jpg/background-320px.jpg') no-repeat center 0;
   }
 }
 

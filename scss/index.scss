@@ -33,7 +33,7 @@ html {
   font-family: $font-main;
   color: $black-color;
   @include flex(row, center);
-  background: url('../assets/jpg/background.jpg') no-repeat center 0;
+  background: url('/assets/jpg/background.jpg') no-repeat center 0;
   transition: $transition;
 
   &:has(.nav__wrapper_active) {
@@ -648,6 +648,6 @@ html {
 
 @media screen and (width <= 320px) {
   .body {
-    background: url('../assets/jpg/background-320px.jpg') no-repeat center 0;
+    background: url('/assets/jpg/background-320px.jpg') no-repeat center 0;
   }
 }
