@@ -35,6 +35,10 @@ html {
   @include flex(row, center);
   background: url('../assets/jpg/background.jpg') no-repeat center 0;
   transition: $transition;
+
+  &:has(.nav__wrapper_active) {
+    overflow: hidden;
+  }
 }
 
 .overlay {
@@ -60,6 +64,11 @@ html {
   padding-bottom: toRem(91);
   border: $border-main;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+  &:has(.nav__wrapper_active) {
+    border-color: transparent;
+    box-shadow: none;
+  }
 }
 
 .sidebar {
@@ -171,6 +180,11 @@ html {
   &__link {
     @include font(toRem(24), 700, toRem(36));
     color: $white-color;
+    transition: $transition;
+
+    &:hover {
+      color: $black-color;
+    }
   }
 
   &__links {
